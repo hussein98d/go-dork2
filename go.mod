@@ -1,4 +1,4 @@
-module github.com/hussein98d/go-dork2
+module github.com/hussein98d/go-dorkx
 
 go 1.15
 
