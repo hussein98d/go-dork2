@@ -61,7 +61,7 @@ func (opt *options) search() (bool, error) {
 		baseURL = "https://www.shodan.io/search"
 		params = ("query=" + queryEsc + "&page=")
 	case "bing":
-		regexes = `<h2><a href=\"(.*?)\" ,`
+		regexes = `<a class=\"tilk\" href=\"(.*?)\" ,`
 		baseURL = "https://www.bing.com/search"
 		params = ("rdr=1&" + "q=" + queryEsc + "&first=")
 	case "duck":
