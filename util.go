@@ -63,7 +63,7 @@ func (opt *options) search() (bool, error) {
 	case "bing":
 		regexes = `<h2><a href=\"(.*?)\" ,`
 		baseURL = "https://www.bing.com/search"
-		params = ("q=" + queryEsc + "&first=")
+		params = ("rdr=1&" + "q=" + queryEsc + "&first=")
 	case "duck":
 		regexes = `<a rel=\"nofollow\" href=\"//duckduckgo.com/l/\?kh=-1&amp;uddg=(.*?)\">`
 		baseURL = "https://html.duckduckgo.com/html/"
