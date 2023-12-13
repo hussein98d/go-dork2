@@ -53,7 +53,7 @@ func (opt *options) search() (bool, error) {
 
 	switch opt.Engine {
 	case "google":
-		regexes = `"><a href="\/url\?q=(.*?)&amp;sa=U&amp;`
+		regexes = `"><a jsname=\"UWckNb\" href="(.*?)\"`
 		baseURL = "https://www.google.com/search"
 		params = ("q=" + queryEsc + "&gws_rd=cr,ssl&client=ubuntu&ie=UTF-8&start=")
 	case "shodan":
