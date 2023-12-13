@@ -1,4 +1,4 @@
-module github.com/hussein98d/go-dorkxxx
+module github.com/hussein98d/go-dorkgoogle
 
 go 1.15
 
